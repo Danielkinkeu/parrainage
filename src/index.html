@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système de Parrainage</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Système de Parrainage Master </h1>
+        <h1>IUSJC 2025 </h1>
+        
+        <div class="controls">
+            <button id="startBtn">Démarrer l'attribution</button>
+            <button id="nextBtn" disabled>Étudiant suivant</button>
+            <button id="generateBtn" disabled>Générer le récapitulatif</button>
+        </div>
+         <h2>Attribution pour l'étudiant <span id="current-student-count"></span></h2>
+        <div id="current-assignment" class="assignment-container" >
+            <div class="student-pair">
+                <div class="student-card">
+                    <h3>Filleul M1</h3>
+                    <div id="m1-photo" class="photo-placeholder">
+                        <div class="avatar">👨‍🎓</div>
+                    </div>
+                    <p id="m1-name" class="student-name"></p>
+                </div>
+                <div class="arrow">➡</div>
+                <div class="student-card">
+                    <h3>Parrain M2</h3>
+                    <div id="m2-photo" class="photo-placeholder">
+                        <div class="avatar">👩‍🎓</div>
+                    </div>
+                    <p id="m2-name" class="student-name"></p>
+                    <p id="m2-count" class="parrain-count"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="summary" class="summary-container" style="display: none;">
+            <h2>Récapitulatif des parrainages</h2>
+            <div id="summary-content"></div>
+        </div>
+    </div>
+
+    <script src="../dist/main.js"></script>
+</body>
+</html>

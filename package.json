@@ -1,0 +1,26 @@
+{
+  "name": "mini-app-de-parrainage",
+  "version": "1.0.0",
+  "description": "Mini application TypeScript pour le parrainage de 2025",
+  "scripts": {
+    "build": "tsc",
+    "dev": "concurrently \"tsc --watch\" \"npx live-server --open=src/index.html\"",
+    "start": "tsc && npx live-server --open=src/index.html",
+    "serve": "npx serve"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danielkinkeu/parrainage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danielkinkeu/parrainage/issues"
+  },
+  "homepage": "https://github.com/Danielkinkeu/parrainage#readme"
+}
